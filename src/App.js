@@ -15,9 +15,9 @@ function App() {
                 animate="visible"
             >
                 <h1 className="hidden">Neoline KFT. buszbérlés, utazási iroda, teherszállítás</h1>
-                <div className="relative flex flex-col items-center justify-center flex-1">
-                    <section className="pt-14 pb-10 px-5 md:px-0">
-                        <div className="container">
+                <div className="relative flex flex-col items-center justify-center flex-1 w-full">
+                    <section className="pt-14 pb-10 px-5 w-full">
+                        <div className="">
                             <Cards />
                         </div>
                     </section>
