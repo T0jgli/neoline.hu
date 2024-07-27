@@ -6,7 +6,7 @@ import { containerAnimation, itemAnimation } from "@/lib/animations";
 function Base() {
   return (
     <motion.div
-      className="min-w-screen min-h-screen left-0 top-0 flex flex-col justify-center items-center inset-0 z-50 bg-no-repeat bg-center bg-cover"
+      className="min-w-screen min-h-screen left-0 top-0 flex flex-col justify-center items-center inset-0 z-50 bg-no-repeat bg-center bg-cover motion"
       style={{
         backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./img/bg.jpg)",
       }}
@@ -22,7 +22,7 @@ function Base() {
               variants={containerAnimation}
               initial="hidden"
               animate="visible"
-              className="grid xl:grid-cols-5 grid-cols-1 -mx-4 gap-8 mb-16 px-8 md:px-0 shadow-sm"
+              className="grid xl:grid-cols-5 grid-cols-1 -mx-4 gap-8 mb-16 px-8 md:px-0 shadow-sm motion"
               style={{ placeItems: "center" }}
             >
               <motion.a
@@ -30,7 +30,7 @@ function Base() {
                 rel="noreferrer"
                 target="_blank"
                 variants={itemAnimation}
-                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card"
+                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card motion"
               >
                 <img src="./img/contibus.jpg " alt="Contibus buszok" className="absolute inset-0 w-full h-full object-cover object-bottom" />
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-black/75"></div>
@@ -48,7 +48,7 @@ function Base() {
                 rel="noreferrer"
                 target="_blank"
                 variants={itemAnimation}
-                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card"
+                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card motion"
               >
                 <img
                   src="./img/tengerpart.jpg"
@@ -70,7 +70,7 @@ function Base() {
                 rel="noreferrer"
                 target="_blank"
                 variants={itemAnimation}
-                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card"
+                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card motion"
               >
                 <img src="./img/teherauto.jpg" alt="Conti-trans teherautó" className="absolute inset-0 w-full h-full object-cover object-bottom" />
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-black/75"></div>
@@ -88,7 +88,7 @@ function Base() {
                 rel="noreferrer"
                 target="_blank"
                 variants={itemAnimation}
-                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card"
+                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card motion"
               >
                 <img src="./img/teherautomentes.jpg" alt="Conti-trans teherautó" className="absolute inset-0 w-full h-full object-cover object-bottom" />
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-black/75"></div>
@@ -106,7 +106,7 @@ function Base() {
                 rel="noreferrer"
                 target="_blank"
                 variants={itemAnimation}
-                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card"
+                className="relative flex-shrink-0  overflow-hidden rounded-3xl hover:brightness-90 duration-300 card motion"
               >
                 <img src="./img/csomagpont.png" alt="Conti-trans teherautó" className="absolute inset-0 w-full h-full object-cover object-bottom" />
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-black/75"></div>
@@ -123,7 +123,7 @@ function Base() {
           </div>
         </section>
       </div>
-      <motion.div variants={itemAnimation} initial="hidden" animate="visible">
+      <motion.div variants={itemAnimation} initial="hidden" animate="visible" className="motion">
         <p className="text-white opacity-30 ">
           © {new Date().getFullYear()} Copyright: Neoline X{" "}
           <a rel="noreferrer" target="_blank" href="https://kvlk.hu/">
